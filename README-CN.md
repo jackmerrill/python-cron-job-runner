@@ -112,7 +112,7 @@ scripts/
 
 您可以使用以下命令检查日志：
 ```bash
-docker exec daily-run-zwpride cat /log/demo1/log.txt
+docker exec python-cron-job-runner cat /log/demo1/log.txt
 ```
 
 ## 示例项目
@@ -169,7 +169,7 @@ requests
 - 非交互安装模式
 
 ### Docker Compose
-- 容器名称：daily-run-zwpride
+- 容器名称：python-cron-job-runner
 - 自动重启策略：除非停止
 - 卷映射：
   - `./log:/log` - 脚本执行和心跳日志
