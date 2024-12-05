@@ -1,8 +1,8 @@
 services:
-  Python-Cron-Job-Runner:
+  python-cron-job-runner:
     build: .
-    image: Python-Cron-Job-Runner:latest
-    container_name: Python-Cron-Job-Runner
+    image: python-cron-job-runner:latest
+    container_name: python-cron-job-runner
     volumes:
       - ./log:/log
       - ./scripts:/scripts
