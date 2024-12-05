@@ -112,7 +112,7 @@ The application includes a heartbeat monitoring system that:
 
 You can check logs using:
 ```bash
-docker exec Python-Cron-Job-Runner cat /log/demo1/log.txt
+docker exec python-cron-job-runner cat /log/demo1/log.txt
 ```
 
 ## Example Project
@@ -169,7 +169,7 @@ The script will:
 - Non-interactive installation mode
 
 ### Docker Compose
-- Container name: Python-Cron-Job-Runner
+- Container name: python-cron-job-runner
 - Automatic restart policy: unless-stopped
 - Volume mappings:
   - `./log:/log` - Script execution and heartbeat logs
