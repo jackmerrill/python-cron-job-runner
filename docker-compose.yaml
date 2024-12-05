@@ -1,8 +1,8 @@
 services:
-  daily-run-zwpride:
+  Python-Cron-Job-Runner:
     build: .
-    image: daily-run-zwpride:latest
-    container_name: daily-run-zwpride
+    image: Python-Cron-Job-Runner:latest
+    container_name: Python-Cron-Job-Runner
     volumes:
       - ./log:/log
       - ./scripts:/scripts
