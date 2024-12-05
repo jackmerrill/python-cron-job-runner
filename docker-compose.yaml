@@ -1,0 +1,14 @@
+services:
+  daily-run-zwpride:
+    build: .
+    image: daily-run-zwpride:latest
+    container_name: daily-run-zwpride
+    volumes:
+      - ./log:/log
+      - ./scripts:/scripts
+      - proj-venv:/proj-venv
+      - /etc/localtime:/etc/localtime:ro
+    restart: unless-stopped
+
+volumes:
+  proj-venv:
