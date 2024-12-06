@@ -78,7 +78,7 @@ Field constraints:
 Examples:
 ```
 0 0 13 * * *    # Runs at 13:00:00 every day
-0 */30 * * * *  # Runs every 30 minutes
+0 * 30 * * * *  # Runs every 30 minutes
 0 0 0 0 0 0     # Task disabled
 ```
 
