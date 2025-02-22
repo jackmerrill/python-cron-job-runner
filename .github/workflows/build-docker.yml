@@ -8,8 +8,6 @@ name: Docker
 on:
   push:
     branches: [master]
-    # Publish semver tags as releases.
-    tags: ["v*.*.*"]
 
 env:
   # Use docker.io for Docker Hub if empty
@@ -45,4 +43,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+          tags: ${{ env.IMAGE_NAME }}:latest
